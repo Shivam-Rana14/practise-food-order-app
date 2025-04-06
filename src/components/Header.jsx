@@ -1,5 +1,5 @@
 import logoImg from "../assets/logo.jpg";
-import Button from "../UI/Button";
+import Button from "./UI/Button";
 import CartContext from "../store/cartContext";
 import { useContext } from "react";
 export default function Header() {

@@ -1,4 +1,4 @@
-import Button from "../UI/Button";
+import Button from "./UI/Button";
 import { currencyFormmater } from "../util/numberFormatter";
 import CartContext from "../store/cartContext";
 import { useContext } from "react";
