@@ -11,7 +11,8 @@ export default function Meals() {
 
   return (
     <ul id="meals">
-      {!isFetching && meals.map((meal) => <MealItem meal={meal} />)}
+      {!isFetching &&
+        meals.map((meal) => <MealItem meal={meal} key={meal.id} />)}
     </ul>
   );
 }
