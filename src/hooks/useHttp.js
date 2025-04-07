@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useFetch(fetchingFn, initialValue) {
+export function useHttp(fetchingFn, initialValue) {
   const [fetchedData, setFetchedData] = useState(initialValue);
   const [isFetching, setIsFetching] = useState();
   const [error, setError] = useState();

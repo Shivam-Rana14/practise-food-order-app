@@ -8,7 +8,7 @@ import CartItem from "./CartItem";
 
 export default function Cart() {
   const { items } = useContext(CartContext);
-  const { progress, hideCart } = useContext(UserProgressContext);
+  const { progress, hideCart, showCheckout } = useContext(UserProgressContext);
   const totalPrice = items.reduce(
     (price, item) => (price += item.quantity * item.price),
     0
@@ -19,8 +19,16 @@ export default function Cart() {
     hideCart();
   }
 
+  function handleCheckout() {
+    showCheckout();
+  }
+
   return (
-    <Modal className="cart" open={progress === "cart"}>
+    <Modal
+      className="cart"
+      open={progress === "cart"}
+      onClose={progress === "cart" ? handleHideCart : null}
+    >
       <h2>Your Cart</h2>
       <ul>
         {items.map((item) => (
@@ -32,7 +40,7 @@ export default function Cart() {
         <Button onClick={handleHideCart} textOnly>
           Close
         </Button>
-        <Button>Checkout</Button>
+        {items.length > 0 && <Button onClick={handleCheckout}>Checkout</Button>}
       </p>
     </Modal>
   );

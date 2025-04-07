@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,10 +7,10 @@
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Electrolize", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#29251c, #2c2306);
+  background: linear-gradient(#0a0907, #241e09);
   color: #d9e2f1;
   min-height: 100vh;
 }
@@ -32,16 +33,16 @@ body {
   height: 4rem;
   object-fit: contain;
   border-radius: 50%;
-  border: 2px solid #ffc404;
+  border: 2px solid #aea893;
 }
 
 #main-header button {
   font-size: 1.5rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Electrolize", sans-serif;
 }
 
 h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Electrolize", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin: 0;
