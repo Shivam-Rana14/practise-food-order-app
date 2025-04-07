@@ -36,6 +36,7 @@ export default function Checkout() {
         },
       }),
     });
+    hideCheckout();
   }
   return (
     <Modal open={progress === "checkout"} onClose={handleHideCheckout}>
