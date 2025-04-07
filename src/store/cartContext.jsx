@@ -86,7 +86,7 @@ export function CartContextProvider({ children }) {
     clearCart,
   };
 
-  console.log(cartCTX);
+  // console.log(cartCTX);
 
   return (
     <CartContext.Provider value={cartCTX}>{children}</CartContext.Provider>

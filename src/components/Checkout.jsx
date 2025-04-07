@@ -41,7 +41,7 @@ export default function Checkout() {
 
   async function checkoutAction(prevFormState, fd) {
     const data = Object.fromEntries(fd.entries());
-    console.log(data);
+    // console.log(data);
 
     await sendRequest(
       JSON.stringify({
